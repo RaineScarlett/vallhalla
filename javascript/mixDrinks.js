@@ -94,7 +94,6 @@ function handleUserInput(event) {
 function serveDrink() {
   const serveDrinkArray = [aldehyde, bronson, delta, flanergide, karmotrine, onTheRocks, aged, mixed, blended];
   if (serveDrinkArray.every((value, index) => value === drinks[randomIndex].inputs[index])) {
-    console.log(serveDrinkArray);
     console.log('Alma: Thanks Jill.');
     document.addEventListener("keydown", handleFKey);
     moneyMade();
