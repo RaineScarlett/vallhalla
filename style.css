@@ -1,0 +1,184 @@
+body {
+    background-color: #080808;
+    color:white;
+}
+
+h1{
+  font-size: 30pt;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.logo {
+  margin-left: 90px;
+  margin-top: -20px;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin-right: 60px;
+  margin-top: -60px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #080808;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18pt;
+}
+
+li a:hover {
+  background-color: #303030;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35pt;
+}
+
+h3 {
+  margin-left: 250px;
+  margin-top: 50px;
+  font-size: 24pt;
+}
+
+p {
+  font-size: 18pt
+}
+
+.full-footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #181818;
+}
+
+footer ul {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+footer li {
+  float: left;
+}
+
+.blahaj {
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+a:link.urls{
+  color: #ffaa9f;
+}
+
+a:visited.urls {
+  color: #bd776d;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+}
+th {
+  font-size: 24pt;
+  text-align: center;
+}
+
+td {
+  font-size: 18pt;
+  text-align: center;
+}
+
+ul.hobbies li{
+  text-align: left;
+  float: left;
+}
+
+table.dashboard th, table.dashboard td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+table.profile-table tr th, table.profile-table tr td {
+  width: 50%;
+}
+
+.home-titles {
+  font-size: 25pt;
+  text-align: center;
+  font-weight: bold;
+}
+
+.home-responses {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+ .accordion {
+  background-color: #080808;
+  color: #ffffff;
+  font-size: 20pt;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #202020;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #000000;
+  display: none;
+  overflow: hidden;
+}
+
+.more-info {
+  color:  #808080;
+}
+
+.mix-drinks {
+  font-size: 30pt;
+  text-align: center;
+  margin-top: -450px;
+  visibility: visible;
+}
+
+.background {
+  background-image: url(./resources/main\ screen.webp);
+  background-size: 100%;
+  width: 70%;
+  padding: 0;
+  margin: auto;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.money-display {
+  font-size: 20pt;
+  margin-top: -15%;
+  margin-left: 90%;
+  visibility: hidden;
+}
