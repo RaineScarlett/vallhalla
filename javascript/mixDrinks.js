@@ -80,34 +80,27 @@ function handleUserInput(event) {
   }
   else if (keyName === " ") {
     mixed = true;
-    serveDrink([aldehyde, bronson, delta, flanergide, karmotrine, onTheRocks, aged, mixed, blended]);
+    serveDrink();
   }
   else if (keyName === "Enter") {
     blended = true;
-    serveBlendedDrink([aldehyde, bronson, delta, flanergide, karmotrine, onTheRocks, aged, mixed, blended]);
+    serveDrink();
   }
   else if (keyName === "Backspace") {
     resetDrink();
   }
 }
 
-function serveDrink(serveDrink) {
-  if (serveDrink.every((value, index) => value === drinks[randomIndex].inputs[index])) {
+function serveDrink() {
+  const serveDrinkArray = [aldehyde, bronson, delta, flanergide, karmotrine, onTheRocks, aged, mixed, blended];
+  if (serveDrinkArray.every((value, index) => value === drinks[randomIndex].inputs[index])) {
+    console.log(serveDrinkArray);
     console.log('Alma: Thanks Jill.');
     document.addEventListener("keydown", handleFKey);
     moneyMade();
+  } else {
+    console.log("Alma: That...wasn't quite what I ordered, but oh well...");
   }
-  else console.log("Alma: That...wasn't quite what I ordered, but oh well...");
-  document.addEventListener("keydown", handleFKey);
-}
-
-function serveBlendedDrink(serveBlendedDrink) {
-  if (serveBlendedDrink.every((value, index) => value === drinks[randomIndex].inputs[index])) {
-    console.log('Alma: Thanks Jill.');
-    document.addEventListener("keydown", handleFKey);
-    moneyMade();
-  }
-  else console.log("Alma: That...wasn't quite what I ordered, but oh well...");
   document.addEventListener("keydown", handleFKey);
 }
 
